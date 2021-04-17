@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="at_the_beginning_of_the_month">В начале месяца:</string>
+    <string name="allocated_for_a_month">Выделено на месяц:</string>
+    <string name="need_to_save">Нужно сэкономить</string>
+    <string name="allocated_for_one_day">Выделено на 1 день:</string>
+    <string name="current_balance">Текущий баланс:</string>
+</resources>

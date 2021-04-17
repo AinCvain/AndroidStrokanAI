@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="statistics_label">СТАТИСТИКА</string>
+    <string name="total_spent">Всего потрачено:</string>
+    <string name="total_purchases">Всего покупок:</string>
+    <string name="total_saved">Всего сэкономлено:</string>
+</resources>

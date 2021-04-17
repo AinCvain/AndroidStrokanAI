@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiaryFragment"
+    tools:ignore="contentDescription">
+
+    <ImageView
+        android:id="@+id/img_TopLine5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/top_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_TopLine4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/top_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_dynamic_NowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:textColor="#4B4B4B"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/img_TopLine3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_TopLine3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/top_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_TopLine3">
+
+        <ImageView
+            android:id="@+id/img_BackgroundForSpentToday"
+            android:layout_width="170dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/background_for_money_info_red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_BackgroundForAvailableToday"
+            android:layout_width="170dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/background_for_money_info_orange"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_const_AvailableToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/available_today"
+            app:layout_constraintStart_toStartOf="@+id/img_BackgroundForAvailableToday"
+            app:layout_constraintTop_toTopOf="@+id/img_BackgroundForAvailableToday" />
+
+        <TextView
+            android:id="@+id/tv_const_SpentToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/spent_today"
+            app:layout_constraintStart_toStartOf="@+id/img_BackgroundForSpentToday"
+            app:layout_constraintTop_toTopOf="@+id/img_BackgroundForSpentToday" />
+
+        <TextView
+            android:id="@+id/tv_dynamic_AvailableToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/img_BackgroundForAvailableToday"
+            app:layout_constraintStart_toStartOf="@+id/img_BackgroundForAvailableToday"
+            app:layout_constraintTop_toTopOf="@+id/img_BackgroundForAvailableToday" />
+
+        <TextView
+            android:id="@+id/tv_dynamic_SpentToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_BackgroundForSpentToday"
+            app:layout_constraintEnd_toEndOf="@+id/img_BackgroundForSpentToday"
+            app:layout_constraintStart_toStartOf="@+id/img_BackgroundForSpentToday"
+            app:layout_constraintTop_toTopOf="@+id/img_BackgroundForSpentToday" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Покупки"
+        android:textColor="#4B4B4B"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/img_TopLine4"
+        app:layout_constraintTop_toBottomOf="@+id/img_TopLine4" />
+
+    <ImageButton
+        android:id="@+id/btn_AddNewPurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="#FFFFFF"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:src="@drawable/red_elipse"
+        app:layout_constraintBottom_toTopOf="@+id/img_TopLine5"
+        app:layout_constraintEnd_toEndOf="@+id/img_TopLine4"
+        app:layout_constraintTop_toBottomOf="@+id/img_TopLine4" />
+
+    <ImageView
+        android:id="@+id/img_AddNewPurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:src="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_AddNewPurchase"
+        app:layout_constraintEnd_toEndOf="@+id/btn_AddNewPurchase"
+        app:layout_constraintStart_toStartOf="@+id/btn_AddNewPurchase"
+        app:layout_constraintTop_toTopOf="@+id/btn_AddNewPurchase" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ll_AddNewPurchase"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ll_AddNewPurchase"
+        app:layout_constraintTop_toBottomOf="@+id/ll_AddNewPurchase">
+
+        <LinearLayout
+            android:id="@+id/ll_ShoppingList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_AddNewPurchase"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_TopLine5">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="226dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="Что вы купили"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:ems="10"
+            android:hint="Цена"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
